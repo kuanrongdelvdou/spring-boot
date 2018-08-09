@@ -37,6 +37,7 @@ import io.undertow.servlet.api.DeploymentInfo;
 import io.undertow.servlet.api.DeploymentManager;
 import io.undertow.servlet.api.ServletContainer;
 import org.apache.jasper.servlet.JspServlet;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.mockito.InOrder;
 
@@ -69,6 +70,21 @@ public class UndertowServletWebServerFactoryTests
 	@Override
 	protected UndertowServletWebServerFactory getFactory() {
 		return new UndertowServletWebServerFactory(0);
+	}
+
+	@Test
+	@Ignore
+	@Override
+	public void sslKeyAlias() throws Exception {
+		super.sslKeyAlias();
+	}
+
+	@Test
+	@Ignore
+	@Override
+	public void sslWantsClientAuthenticationSucceedsWithClientCertificate()
+			throws Exception {
+		super.sslWantsClientAuthenticationSucceedsWithClientCertificate();
 	}
 
 	@Test
