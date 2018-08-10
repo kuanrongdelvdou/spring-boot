@@ -40,7 +40,6 @@ import org.eclipse.jetty.util.thread.QueuedThreadPool;
 import org.eclipse.jetty.util.thread.ThreadPool;
 import org.eclipse.jetty.webapp.Configuration;
 import org.eclipse.jetty.webapp.WebAppContext;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.mockito.InOrder;
 
@@ -70,13 +69,6 @@ public class JettyServletWebServerFactoryTests
 	@Override
 	protected JettyServletWebServerFactory getFactory() {
 		return new JettyServletWebServerFactory(0);
-	}
-
-	@Test
-	@Ignore
-	@Override
-	public void sslKeyAlias() throws Exception {
-		super.sslKeyAlias();
 	}
 
 	@Test
